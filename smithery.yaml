@@ -1,0 +1,6 @@
+startCommand:
+  type: http
+  url: https://tooloracle.io/shop/mcp/
+  configSchema:
+    type: object
+    properties: {}
