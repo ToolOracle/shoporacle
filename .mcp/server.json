@@ -1,7 +1,14 @@
 {
   "name": "ShopOracle",
-  "description": "E-Commerce Intelligence \u2014 11 tools: product search, price comparison, competitor pricing, stock monitoring, reviews across Amazon, eBay, Google Shopping.",
+  "description": "E-Commerce Intelligence \u2014 11 tools, unit-based pricing (2-10 units), x402 USDC micropayments on Base.",
   "url": "https://tooloracle.io/shop/mcp/",
-  "version": "1.2.0",
-  "tools": 11
+  "x402": "https://tooloracle.io/x402/shop/mcp/",
+  "version": "2.0.0",
+  "tools": 11,
+  "pricing": {
+    "unit": "$0.01",
+    "range": "$0.02-$0.10",
+    "network": "base",
+    "currency": "USDC"
+  }
 }
