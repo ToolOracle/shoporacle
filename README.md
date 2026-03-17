@@ -1,55 +1,51 @@
 # ShopOracle — E-Commerce Intelligence MCP Server
 
-> Real-time product search, price comparison, competitor analysis, stock monitoring, and review insights across Amazon, eBay, and Google Shopping.
+> Product search, price comparison, competitor analysis, stock monitoring, reviews across Amazon, eBay, Google Shopping. 11 tools, 18 countries.
 
-**Part of [ToolOracle](https://tooloracle.io) — AI-Native MCP Tools for Professionals**
+**Part of [ToolOracle](https://tooloracle.io) — Policy-enforced, tier-gated, usage-metered tool execution**
 
-## Connect in 30 seconds
+## Connect
 
 ```bash
 npx -y mcp-remote https://tooloracle.io/shop/mcp/
 ```
 
-**Claude Desktop** (`~/.claude/claude_desktop_config.json`):
-```json
-{
-  "mcpServers": {
-    "shoporacle": {
-      "command": "npx",
-      "args": ["-y", "mcp-remote", "https://tooloracle.io/shop/mcp/"]
-    }
-  }
-}
+## x402 Pay-per-call (autonomous agents)
+
+```
+POST https://tooloracle.io/x402/shop/mcp/
+→ 402 with structured pricing → Send USDC on Base → Retry with X-PAYMENT header
 ```
 
-## 11 Tools
+## 11 Tools · 1 unit = $0.01
 
-| Tool | Credits | Description |
-|------|---------|-------------|
-| `product_search` | 3 | Search across Google Shopping, Amazon, eBay |
-| `compare_prices` | 5 | Cross-marketplace price comparison with savings |
-| `competitor_pricing` | 3 | Side-by-side pricing of two products/brands |
-| `bestseller_list` | 3 | Top-selling products in any category |
-| `track_price` | 2 | Current price + historical tracking |
-| `stock_monitor` | 2 | Availability check across marketplaces |
-| `market_position` | 2 | Product segment: budget/mid/premium/luxury |
-| `review_summary` | 3 | Amazon ratings, breakdown, top reviews |
-| `price_history` | 1 | Stored price history with trend analysis |
-| `price_alert` | 1 | Set/check price drop alerts |
-| `health_check` | 0 | Server status, API connectivity |
+| Tool | Units | Price | Tier |
+|------|-------|-------|------|
+| `competitor_pricing` | 10 | $0.10 | Premium |
+| `compare_prices` | 8 | $0.08 | Deep |
+| `product_search` | 5 | $0.05 | Deep |
+| `bestseller_list` | 5 | $0.05 | Deep |
+| `market_position` | 5 | $0.05 | Deep |
+| `review_summary` | 5 | $0.05 | Deep |
+| `track_price` | 3 | $0.03 | Standard |
+| `stock_monitor` | 3 | $0.03 | Standard |
+| `price_history` | 2 | $0.02 | Standard |
+| `price_alert` | 2 | $0.02 | Standard |
+| `health_check` | 0 | free | — |
 
-## 18 Countries Supported
+## Tier gating
+
+| Tier | Max/call | Blocked |
+|------|----------|---------|
+| Free ($0) | 3 units | competitor_pricing |
+| Starter ($49/mo) | 8 units | — |
+| Pro+ / x402 | 15 units | — |
+
+## 18 Countries
 
 DE, US, UK, FR, ES, IT, NL, AT, CH, SE, NO, DK, PL, BR, CA, AU, JP, IN
 
-## Pricing
-
-Credits shared across all ToolOracle products: Free (50/mo) | Starter $49 (500) | Pro $149 (2K) | Agency $349 (6K)
-
 ## Links
 
-- [ToolOracle Platform](https://tooloracle.io)
-- [RankOracle (SEO)](https://github.com/ToolOracle/rankoracle)
-- [MemeOracle](https://github.com/ToolOracle/memeoracle)
-- [SmartMoneyOracle](https://github.com/ToolOracle/smartmoneyoracle)
-- [YieldOracle](https://github.com/ToolOracle/yieldoracle)
+- [ToolOracle](https://tooloracle.io) · [x402 Gateway](https://tooloracle.io/x402/)
+- [RankOracle](https://github.com/ToolOracle/rankoracle) · [MemeOracle](https://github.com/ToolOracle/memeoracle) · [YieldOracle](https://github.com/ToolOracle/yieldoracle) · [SmartMoneyOracle](https://github.com/ToolOracle/smartmoneyoracle)
