@@ -1,51 +1,61 @@
-# ShopOracle — E-Commerce Intelligence MCP Server
+# 🏪 shopOracle
 
-> Product search, price comparison, competitor analysis, stock monitoring, reviews across Amazon, eBay, Google Shopping. 11 tools, 18 countries.
+**Consumer MCP Server** — 0 tools | Part of [ToolOracle](https://tooloracle.io)
 
-**Part of [ToolOracle](https://tooloracle.io) — Policy-enforced, tier-gated, usage-metered tool execution**
+![Tools](https://img.shields.io/badge/MCP_Tools-0-10B898?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Live-00C853?style=flat-square)
+![Tier](https://img.shields.io/badge/Tier-Free-2196F3?style=flat-square)
 
-## Connect
+## Quick Connect
 
 ```bash
+# Claude Desktop / Cursor / Windsurf
 npx -y mcp-remote https://tooloracle.io/shop/mcp/
 ```
 
-## x402 Pay-per-call (autonomous agents)
-
+```json
+// claude_desktop_config.json
+{
+  "mcpServers": {
+    "shoporacle": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://tooloracle.io/shop/mcp/"]
+    }
+  }
+}
 ```
-POST https://tooloracle.io/x402/shop/mcp/
-→ 402 with structured pricing → Send USDC on Base → Retry with X-PAYMENT header
-```
 
-## 11 Tools · 1 unit = $0.01
+## Tools (0)
 
-| Tool | Units | Price | Tier |
-|------|-------|-------|------|
-| `competitor_pricing` | 10 | $0.10 | Premium |
-| `compare_prices` | 8 | $0.08 | Deep |
-| `product_search` | 5 | $0.05 | Deep |
-| `bestseller_list` | 5 | $0.05 | Deep |
-| `market_position` | 5 | $0.05 | Deep |
-| `review_summary` | 5 | $0.05 | Deep |
-| `track_price` | 3 | $0.03 | Standard |
-| `stock_monitor` | 3 | $0.03 | Standard |
-| `price_history` | 2 | $0.02 | Standard |
-| `price_alert` | 2 | $0.02 | Standard |
-| `health_check` | 0 | free | — |
+| Tool | Description |
+|------|-------------|
 
-## Tier gating
+## Pricing
 
-| Tier | Max/call | Blocked |
-|------|----------|---------|
-| Free ($0) | 3 units | competitor_pricing |
-| Starter ($49/mo) | 8 units | — |
-| Pro+ / x402 | 15 units | — |
+| Tier | Rate Limit | Price |
+|------|-----------|-------|
+| Free | 100 calls/day | €0 |
+| Pro | 10,000 calls/day | €29/month |
+| Enterprise | Unlimited | Custom |
 
-## 18 Countries
+> Free tier includes all tools with rate limiting. Upgrade for higher limits and priority support.
 
-DE, US, UK, FR, ES, IT, NL, AT, CH, SE, NO, DK, PL, BR, CA, AU, JP, IN
+## Part of ToolOracle
+
+shopOracle is one of **42 specialized MCP servers** in the [ToolOracle](https://tooloracle.io) ecosystem — the largest collection of production-ready MCP tools for AI agents.
+
+
+
+**Related Oracles:**
+- [FeedOracle](https://feedoracle.io) — Evidence-grade compliance data infrastructure
+- [ToolOracle](https://tooloracle.io) — 42 Oracles, 390+ MCP Tools
 
 ## Links
 
-- [ToolOracle](https://tooloracle.io) · [x402 Gateway](https://tooloracle.io/x402/)
-- [RankOracle](https://github.com/ToolOracle/rankoracle) · [MemeOracle](https://github.com/ToolOracle/memeoracle) · [YieldOracle](https://github.com/ToolOracle/yieldoracle) · [SmartMoneyOracle](https://github.com/ToolOracle/smartmoneyoracle)
+- 🌐 Live: `https://tooloracle.io/shop/mcp/`
+- 📚 Docs: [tooloracle.io/docs](https://tooloracle.io/docs)
+- 🏠 Platform: [tooloracle.io](https://tooloracle.io)
+
+---
+
+*Built by [FeedOracle](https://feedoracle.io) — Evidence by Design*
