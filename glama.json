@@ -1,7 +1,16 @@
 {
   "name": "ShopOracle",
-  "description": "E-Commerce Intelligence MCP — 11 tools, Amazon/eBay/Google Shopping, 18 countries",
+  "description": "E-Commerce Intelligence MCP \u2014 11 tools, Amazon/eBay/Google Shopping, 18 countries",
   "url": "https://tooloracle.io/shop/mcp/",
   "category": "E-Commerce",
-  "tags": ["ecommerce", "price-comparison", "amazon", "product-search", "shopping", "x402", "mcp"]
+  "tags": [
+    "ecommerce",
+    "price-comparison",
+    "amazon",
+    "product-search",
+    "shopping",
+    "x402",
+    "mcp"
+  ],
+  "endpoint": "https://tooloracle.io/x402/shop/mcp/"
 }
